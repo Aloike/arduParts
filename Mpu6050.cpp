@@ -2,6 +2,14 @@
 
 #include <Wire.h>
 
+#if 1
+#   define  LOG(msg)    Serial.print( "Mpu6050.cpp::"msg )
+#   define  LOGLN(msg)  Serial.println("Mpu6050.cpp::"msg )
+#else
+#   define LOG(msg)
+#   define LOGLN(msg)
+#endif
+
 // Register names according to the datasheet.
 // According to the InvenSense document
 // "MPU-6000 and MPU-6050 Register Map
@@ -725,7 +733,9 @@ bool    Mpu6050::init(String *argErrorString)
 
 
     /* Initialize the 'Wire' class for the I2C-bus. */
+    LOGLN( "Init Wire..............................." );
     Wire.begin();
+    LOGLN( "Init Wire.......................[  OK  ]" );
 
 
     // default at power-up:
@@ -735,33 +745,42 @@ bool    Mpu6050::init(String *argErrorString)
     //    The device is in sleep mode.
     //
 
+    LOGLN( "Reading WhoAmI.........................." );
     error = this->read( MPU6050_WHO_AM_I, &this->m_whoAmI, 1 );
     if( error != 0 ) {
+        LOGLN( "Reading WhoAmI..................[ERREUR]" );
         if( argErrorString != 0 ) {
             *argErrorString = String( "Can't fetch who i am" );
         }
         return false;
     }
+    LOGLN( "Reading WhoAmI..................[  OK  ]" );
 
     // According to the datasheet, the 'sleep' bit
     // should read a '1'. But I read a '0'.
     // That bit has to be cleared, since the sensor
     // is in sleep mode at power-up. Even if the
     // bit reads '0'.
+    LOGLN( "Reading PowerManagement................." );
     error = this->read( MPU6050_PWR_MGMT_2, &c, 1 );
     if( error != 0 ) {
         if( argErrorString != 0 ) {
             *argErrorString = String( "Can't fetch sleep bit" );
         }
+        LOGLN( "Reading PowerManagement.........[ERREUR]" );
         return false;
     }
+    LOGLN( "Reading PowerManagement.........[  OK  ]" );
 
 
-    // Clear the 'sleep' bit to start the sensor.
+    /* Clear the 'sleep' bit to start the sensor. */
+    LOGLN( "Clear 'sleep' bit......................." );
     this->write_reg( MPU6050_PWR_MGMT_1, 0 );
+    LOGLN( "Clear 'sleep' bit...............[  OK  ]" );
 
 
     /* Get the accelerometer's config */
+    LOGLN( "Get the accelerometer config............" );
     uint8_t reg_content;
     this->read( MPU6050_ACCEL_CONFIG, &reg_content, 1 );
 
@@ -775,9 +794,11 @@ bool    Mpu6050::init(String *argErrorString)
     } else if( (reg_content & MPU6050_AFS_SEL_2G) == MPU6050_AFS_SEL_2G ) {
         this->m_accelerometerRange  = AccelerometerRange_2g;
     }
+    LOGLN( "Get the accelerometer config....[  OK  ]" );
 
 
     /* Get the gyro config */
+    LOGLN( "Get the gyro config....................." );
     this->read( MPU6050_GYRO_CONFIG, &reg_content, 1 );
     if( (reg_content & MPU6050_FS_SEL_2000) == MPU6050_FS_SEL_2000 ) {
         this->m_gyroRange   = GyroRange2000deg_s;
@@ -788,12 +809,15 @@ bool    Mpu6050::init(String *argErrorString)
     } else if( (reg_content & MPU6050_FS_SEL_250) == MPU6050_FS_SEL_250 ) {
         this->m_gyroRange   = GyroRange250deg_s;
     }
+    LOGLN( "Get the gyro config.............[  OK  ]" );
 
 
 
-    Serial.print( "MPU6050_ACCEL_CONFIG register == 0b" );
-    Serial.print( reg_content, BIN );
-    Serial.println( "" );
+//    Serial.print( "MPU6050_ACCEL_CONFIG register == 0b" );
+//    Serial.print( reg_content, BIN );
+//    Serial.println( "" );
+
+    return true;
 }
 
 int16_t Mpu6050::rawAccelX() const
