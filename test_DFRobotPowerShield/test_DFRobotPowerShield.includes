@@ -1,0 +1,4 @@
+./
+/usr/share/arduino//hardware/arduino/cores/arduino
+/usr/share/arduino/libraries/Servo/
+/usr/share/arduino/libraries/Wire/
