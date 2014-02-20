@@ -1,3 +1,15 @@
+/*!
+@file   test_Adafruit_BMP180.cpp
+@brief  Test for Adafruit_BMP180 sensor interface class.
+
+BMP180 to Arduino nano328 connections:
++ Vin to +5V
++ GND to GND
++ SCL to AN5
++ SDA to AN4
+
+*/
+
 // Do not remove the include below
 #include "test_Adafruit_BMP180.h"
 
@@ -49,6 +61,11 @@ void loop()
 
     /* Print Pascals pressure */
     Serial.print( sensor.getPressure_Pa() );
+    Serial.print( ";" );
+
+
+    /* Print Altitude */
+    Serial.print( sensor.getAltitude_m() );
     Serial.print( ";" );
 
 

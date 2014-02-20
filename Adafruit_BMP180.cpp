@@ -51,6 +51,28 @@ Adafruit_BMP180::Adafruit_BMP180(/*int32_t argSensorId)
 /* ######################################################################### */
 /* ######################################################################### */
 
+float    Adafruit_BMP180::getAltitude_m( float argSeaLevelPressure_Pa )
+{
+    /* Hyposometric formula:                      */
+    /*                                            */
+    /*     ((P0/P)^(1/5.257) - 1) * (T + 273.15)  */
+    /* h = -------------------------------------  */
+    /*                   0.0065                   */
+    /*                                            */
+    /* where: h   = height (in meters)            */
+    /*        P0  = sea-level pressure (in hPa)   */
+    /*        P   = atmospheric pressure (in hPa) */
+    /*        T   = temperature (in �C)           */
+
+    return (((float)pow((argSeaLevelPressure_Pa/this->getPressure_Pa()),
+                        0.190223F) - 1.0F)
+           * (this->getTemperature_c() + 273.15F))
+            / 0.0065F;
+}
+
+/* ######################################################################### */
+/* ######################################################################### */
+
 float    Adafruit_BMP180::getPressure_Pa()
 {
     int32_t  rawTemperature = 0, rawPressure = 0, compp = 0;

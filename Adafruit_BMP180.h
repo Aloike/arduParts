@@ -6,9 +6,11 @@
 /*!
  * @brief Interface for Adafruit's BMP180 sensor board.
  *
+ * This class and its implementation is mostly based on Kevin Townsend's work
+ * for Adafruit Industries (Adafruit_BMP085_Unified class).
+ *
  * @see http://www.adafruit.com/products/1603#Technical_Details
  * @see http://learn.adafruit.com/bmp085/wiring-the-bmp085
- *
  *
  * @author     GOM
  * @copyright  © 2014 GOM
@@ -27,19 +29,20 @@ public:
     };
 
     enum Bmp180Mode {
-        ModeUltraLowPower       = 0,  /*!< @todo test this */
-        ModeStandard            = 1,             /*!< @todo test this */
-        ModeHighResolution      = 2,       /*!< @todo test this */
+        ModeUltraLowPower       = 0,    /*!< @todo test this */
+        ModeStandard            = 1,    /*!< @todo test this */
+        ModeHighResolution      = 2,    /*!< @todo test this */
         ModeUltraHighResolution = 3
     };
 
-//    static const int32_t    DEFAULT_SENSOR_ID   = -1;
 
-    Adafruit_BMP180( /*int32_t argSensorId=DEFAULT_SENSOR_ID*/ );
+    Adafruit_BMP180();
+
 
     ErrorCode init( Bmp180Mode argMode = ModeUltraHighResolution );
 
 
+    float   getAltitude_m( float argSeaLevelPressure_Pa=101525 );
     float   getPressure_Pa(void);
     float   getTemperature_c(void);
 
@@ -66,9 +69,10 @@ private:
       int16_t  md;
     };
 
+
     CalibrationData m_calibrationData;
     Bmp180Mode      m_mode;
-//    int32_t         m_sensorId;
+
 
     static void read_int16(byte argRegister, int16_t *argValue);
 
