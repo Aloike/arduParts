@@ -27,10 +27,10 @@ public:
     };
 
     enum Bmp180Mode {
-//        ModeUltraLowPower   = 0,  /*!< @todo test this */
-//        ModeStandard,             /*!< @todo test this */
-//        ModeHighResolution,       /*!< @todo test this */
-        ModeUltraHighResolution
+        ModeUltraLowPower       = 0,  /*!< @todo test this */
+        ModeStandard            = 1,             /*!< @todo test this */
+        ModeHighResolution      = 2,       /*!< @todo test this */
+        ModeUltraHighResolution = 3
     };
 
 //    static const int32_t    DEFAULT_SENSOR_ID   = -1;
@@ -40,8 +40,11 @@ public:
     ErrorCode init( Bmp180Mode argMode = ModeUltraHighResolution );
 
 
+    float   getPressure_Pa(void);
     float   getTemperature_c(void);
 
+
+    int32_t readRawPressure(void);
     int32_t readRawTemperature(void);
 
 

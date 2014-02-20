@@ -42,6 +42,16 @@ void loop()
     Serial.print( ";" );
 
 
+    /* Print raw pressure */
+    Serial.print( sensor.readRawPressure() );
+    Serial.print( ";" );
+
+
+    /* Print Pascals pressure */
+    Serial.print( sensor.getPressure_Pa() );
+    Serial.print( ";" );
+
+
     /* Print End Of Frame */
     Serial.println( "*" );
 
