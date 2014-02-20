@@ -1,0 +1,50 @@
+// Do not remove the include below
+#include "test_Adafruit_BMP180.h"
+
+#include "Adafruit_BMP180.h"
+
+
+Adafruit_BMP180 sensor;
+
+//"........................................"
+
+void setup()
+{
+    /* Setup serial interface */
+    Serial.begin( 115200 );
+    Serial.println( "Adafruit BMP180 Pressure Sensor Test" );
+
+
+    /* Setup Adafruit BMP180 sensor */
+    Serial.print( "Init sensor BMP180......................" );
+    if( sensor.init() != Adafruit_BMP180::NoError ) {
+        Serial.println( "[FAILED]" );
+        while( 1 );
+    } else {
+        Serial.println( "[  OK  ]" );
+    }
+
+}
+
+void loop()
+{
+    /* Print Start Of Frame */
+    Serial.print( "$test_Adafruit_BMP180;" );
+
+
+    /* Print raw temperature */
+    Serial.print( sensor.readRawTemperature() );
+    Serial.print( ";" );
+
+
+    /* Print Celsius temperature */
+    Serial.print( sensor.getTemperature_c() );
+    Serial.print( ";" );
+
+
+    /* Print End Of Frame */
+    Serial.println( "*" );
+
+    delay( 100 );
+}
+
