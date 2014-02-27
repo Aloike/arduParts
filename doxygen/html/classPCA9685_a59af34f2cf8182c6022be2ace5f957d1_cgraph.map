@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$classPCA9685.html#ab0dffd7507a8acce84eaf4b740c46efd" title="Convenience function to read a 8&#45;bits unisgned data from the register argAddress..." alt="" coords="291,5,419,35"/>
+<area shape="rect" href="$classPCA9685.html#ad3d6eecf31511999b1c85b906f5f17d2" title="Convenience function to write a 8&#45;bits unisgned argData into the register argAddress..." alt="" coords="289,59,420,88"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$classMpu6050.html#ad253a0bb8030d1285fc5099f247c6eef" title="Mpu6050::accelY_g" alt="" coords="197,84,333,113"/>
+<area shape="rect" href="$test__Mpu6050__main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="581,84,627,113"/>
+<area shape="rect" href="$classMpu6050.html#a677e32dcf94d081c0b0389583438c2a0" title="Mpu6050::angleY_deg" alt="" coords="383,5,532,35"/>
+<area shape="rect" href="$classMpu6050.html#a60a2f79d849ff3854b44bc88c5bee1dc" title="Mpu6050::updateData" alt="" coords="384,109,531,139"/>
+</map>

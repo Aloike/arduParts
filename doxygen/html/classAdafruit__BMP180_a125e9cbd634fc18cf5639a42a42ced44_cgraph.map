@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" href="$classAdafruit__BMP180.html#a8d575555149b77feea70a997b4e66c37" title="Adafruit_BMP180::getPressure_Pa" alt="" coords="273,59,497,88"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#a3f0f085c7a1e37d108abb723733ccb67" title="Adafruit_BMP180::getTemperature_c" alt="" coords="268,5,503,35"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#afe4265f80946304c32a23629c117fa6a" title="Adafruit_BMP180::readRawPressure" alt="" coords="563,59,795,88"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#ad6be3dc1c8f3516d07fae143283497c3" title="Adafruit_BMP180::readRawTemperature" alt="" coords="552,5,805,35"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#a90e1e69c21a7e6e7db110d3a647894aa" title="Adafruit_BMP180::read_uint16" alt="" coords="864,59,1061,88"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#a94ed2bb21ce05f467ef306e606993524" title="Adafruit_BMP180::read_uint8" alt="" coords="867,112,1059,141"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#ace815657ab11566a3d65a5459e355124" title="Adafruit_BMP180::writeCommand" alt="" coords="855,5,1071,35"/>
+</map>

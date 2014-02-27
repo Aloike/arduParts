@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$classDFRobotPowerShield.html#a18c01639c6cd5ef2dfd84dceef70e21f" title="DFRobotPowerShield::init Initialisation of in/out pins." alt="" coords="328,5,496,35"/>
+<area shape="rect" href="$classDFRobotPowerShield.html#a41dd4b4e312343db0bed78a0b97d6c94" title="DFRobotPowerShield::setOutputEnabled To set whether the auxiliary power output is..." alt="" coords="545,5,799,35"/>
+</map>

@@ -1,0 +1,3 @@
+<map id="G" name="G">
+<area shape="rect" href="$unionMpu6050_1_1accel__t__gyro__union.html" title="{Mpu6050::accel_t_gyro_union\n|+ x_accel_h\l+ x_accel_l\l+ y_accel_h\l+ y_accel_l\l+ z_accel_h\l+ z_accel_l\l+ t_h\l+ t_l\l+ x_gyro_h\l+ x_gyro_l\l+ y_gyro_h\l+ y_gyro_l\l+ z_gyro_h\l+ z_gyro_l\l+ reg\l+ x_accel\l+ y_accel\l+ z_accel\l+ temperature\l+ x_gyro\l+ y_gyro\l+ z_gyro\l+ value\l|}" alt="" coords="5,5,200,504"/>
+</map>

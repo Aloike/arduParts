@@ -1,0 +1,30 @@
+<map id="G" name="G">
+<area shape="rect" href="$classAdafruit__BMP180.html#a125e9cbd634fc18cf5639a42a42ced44" title="Adafruit_BMP180::getAltitude_m" alt="" coords="100,133,311,163"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#a8d575555149b77feea70a997b4e66c37" title="Adafruit_BMP180::getPressure_Pa" alt="" coords="367,105,591,135"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#afe4265f80946304c32a23629c117fa6a" title="Adafruit_BMP180::readRawPressure" alt="" coords="656,105,888,135"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#ad6be3dc1c8f3516d07fae143283497c3" title="Adafruit_BMP180::readRawTemperature" alt="" coords="645,159,899,188"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#a3f0f085c7a1e37d108abb723733ccb67" title="Adafruit_BMP180::getTemperature_c" alt="" coords="361,159,596,188"/>
+<area shape="rect" href="$classPCA9685.html#a774a99813a19b1ae34dbca36fed649ce" title="Returns the the device&#39;s power mode." alt="" coords="407,287,551,316"/>
+<area shape="rect" href="$test__PCA9685_8cpp.html#a96383a491e9af6162202475e8b97f120" title="pca9685_printConfig" alt="" coords="136,597,275,627"/>
+<area shape="rect" href="$classPCA9685.html#a55c9ab6e79557fd81da7fb32a721154f" title="To set the cycle &amp; phase of an output." alt="" coords="136,1065,275,1095"/>
+<area shape="rect" href="$classPCA9685.html#a85cbeb29ea72985bfc398bd38491704c" title="Sets the device&#39;s power mode." alt="" coords="129,1012,281,1041"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#a90e1e69c21a7e6e7db110d3a647894aa" title="Adafruit_BMP180::read_uint16" alt="" coords="957,159,1155,188"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#a94ed2bb21ce05f467ef306e606993524" title="Adafruit_BMP180::read_uint8" alt="" coords="960,52,1152,81"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#ace815657ab11566a3d65a5459e355124" title="Adafruit_BMP180::writeCommand" alt="" coords="948,105,1164,135"/>
+<area shape="rect" href="$classPCA9685.html#ab0dffd7507a8acce84eaf4b740c46efd" title="Convenience function to read a 8&#45;bits unisgned data from the register argAddress..." alt="" coords="992,699,1120,728"/>
+<area shape="rect" href="$classPCA9685.html#a1446fb0c109681ad1a7b6ba609dea958" title="Returns the value that has been set by the constructor." alt="" coords="415,492,543,521"/>
+<area shape="rect" href="$classPCA9685.html#a08219d87033026511cf345d6f7805c8f" title="To know whether the device can be restored from a previous state, for example after..." alt="" coords="699,348,845,377"/>
+<area shape="rect" href="$classPCA9685.html#ac83dee2758549b7d00e99ae55837d37a" title="Returns the value that has been set by the constructor." alt="" coords="685,480,859,509"/>
+<area shape="rect" href="$classPCA9685.html#ac6a5ba908d60962787b7e04586a27b30" title="Returns the PCA9685&#39;s outputs state of when its /OE pin is set to logical 1 (==output..." alt="" coords="669,421,875,451"/>
+<area shape="rect" href="$classPCA9685.html#a627a477f8eca4edba4fb0c8926dd1a64" title="Returns the MODE1_EXTCLK bit state." alt="" coords="668,592,876,621"/>
+<area shape="rect" href="$classPCA9685.html#ac31c3a4916e2f1bbc2241e249047fd78" title="PCA9685::ledAllCallAddressEnabled" alt="" coords="656,645,888,675"/>
+<area shape="rect" href="$classPCA9685.html#a38d3b79f31580a2f21728d7cfd9ec8cb" title="Returns the event type on which the output will be changed." alt="" coords="675,699,869,728"/>
+<area shape="rect" href="$classPCA9685.html#a1f28ed7d478206afcb856cf5042b444d" title="Returns the PWM output frequency, calculated from the chip&#39;s prescaler and the..." alt="" coords="389,545,568,575"/>
+<area shape="rect" href="$classPCA9685.html#a1f12284c299c084c5648634f90c97d51" title="To know whether the output logical state is inverted or not." alt="" coords="673,752,871,781"/>
+<area shape="rect" href="$classPCA9685.html#a3945fc89891a9cb342edc4835df30282" title="To get the output driver&#39;s internal structure type." alt="" coords="393,801,564,831"/>
+<area shape="rect" href="$classPCA9685.html#ae450cd77d36495322c7a566b64a61380" title="PCA9685::subAddress1Enabled" alt="" coords="376,855,581,884"/>
+<area shape="rect" href="$classPCA9685.html#a7a2e2e3e54ed2f79c82875752495dbd7" title="PCA9685::subAddress2Enabled" alt="" coords="376,908,581,937"/>
+<area shape="rect" href="$classPCA9685.html#ac1dc9b45bf1ad7b2b7e466e241e0ecfe" title="PCA9685::subAddress3Enabled" alt="" coords="376,961,581,991"/>
+<area shape="rect" href="$classPCA9685.html#a03812953c3af730535077acbed8614af" title="To get the value of the prescale that will be used to divide internal counter&#39;s..." alt="" coords="687,539,857,568"/>
+<area shape="rect" href="$classPCA9685.html#ad3d6eecf31511999b1c85b906f5f17d2" title="Convenience function to write a 8&#45;bits unisgned argData into the register argAddress..." alt="" coords="413,1065,544,1095"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$classPCA9685.html#ac83dee2758549b7d00e99ae55837d37a" title="Returns the value that has been set by the constructor." alt="" coords="236,5,409,35"/>
+<area shape="rect" href="$classPCA9685.html#a03812953c3af730535077acbed8614af" title="To get the value of the prescale that will be used to divide internal counter&#39;s..." alt="" coords="237,59,408,88"/>
+<area shape="rect" href="$classPCA9685.html#ab0dffd7507a8acce84eaf4b740c46efd" title="Convenience function to read a 8&#45;bits unisgned data from the register argAddress..." alt="" coords="460,59,588,88"/>
+</map>

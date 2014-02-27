@@ -1,0 +1,51 @@
+<map id="G" name="G">
+<area shape="rect" href="$classMpu6050.html#a6aa0226333d3681d520156d088d0f9c8" title="Mpu6050::accelX_g" alt="" coords="433,305,569,335"/>
+<area shape="rect" href="$classMpu6050.html#a6b7ba723578cd439a8266e5876803d43" title="Mpu6050::rawAccelX" alt="" coords="724,421,868,451"/>
+<area shape="rect" href="$classMpu6050.html#ad253a0bb8030d1285fc5099f247c6eef" title="Mpu6050::accelY_g" alt="" coords="433,176,569,205"/>
+<area shape="rect" href="$classMpu6050.html#a9382dbb7bb85fdafb079549bd3f57811" title="Mpu6050::rawAccelY" alt="" coords="724,124,868,153"/>
+<area shape="rect" href="$classMpu6050.html#a32d3d1614cfb77508097a9581933cade" title="Mpu6050::accelZ_g" alt="" coords="433,384,569,413"/>
+<area shape="rect" href="$classMpu6050.html#adbf2476a2c49aaba54810e974c3427fa" title="Mpu6050::rawAccelZ" alt="" coords="724,507,868,536"/>
+<area shape="rect" href="$classMpu6050.html#a40d6325833ca49b3e60369e1b660e21a" title="Mpu6050::angleX_deg" alt="" coords="141,332,291,361"/>
+<area shape="rect" href="$classMpu6050.html#a677e32dcf94d081c0b0389583438c2a0" title="Mpu6050::angleY_deg" alt="" coords="141,124,291,153"/>
+<area shape="rect" href="$classMpu6050.html#a91f485fc0c88974d32e348de61a166d6" title="Mpu6050::angleZ_deg" alt="" coords="141,436,291,465"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#a125e9cbd634fc18cf5639a42a42ced44" title="Adafruit_BMP180::getAltitude_m" alt="" coords="111,692,321,721"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#a8d575555149b77feea70a997b4e66c37" title="Adafruit_BMP180::getPressure_Pa" alt="" coords="389,664,613,693"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#afe4265f80946304c32a23629c117fa6a" title="Adafruit_BMP180::readRawPressure" alt="" coords="680,664,912,693"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#ad6be3dc1c8f3516d07fae143283497c3" title="Adafruit_BMP180::readRawTemperature" alt="" coords="669,717,923,747"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#a3f0f085c7a1e37d108abb723733ccb67" title="Adafruit_BMP180::getTemperature_c" alt="" coords="384,717,619,747"/>
+<area shape="rect" href="$test__GA1A1S202WP__lightSensor_8cpp.html#a66ebb6f23e4fd03f92c6e071f37fbd42" title="getSensorData" alt="" coords="163,847,269,876"/>
+<area shape="rect" href="$classMpu6050.html#afeeb66eb48c3b96fdcc09cdb73d9bb57" title="Mpu6050::gyroX_deg_s" alt="" coords="137,953,295,983"/>
+<area shape="rect" href="$classMpu6050.html#a3e8738a84018957b2ef5d96d54d6305d" title="Mpu6050::gyroY_deg_s" alt="" coords="137,900,295,929"/>
+<area shape="rect" href="$classMpu6050.html#a591b6979b5f69130dab01953e3fbe773" title="Mpu6050::gyroZ_deg_s" alt="" coords="137,1007,295,1036"/>
+<area shape="rect" href="$classPCA9685.html#a774a99813a19b1ae34dbca36fed649ce" title="Returns the the device&#39;s power mode." alt="" coords="429,1059,573,1088"/>
+<area shape="rect" href="$classDFRobotPowerShield.html#aa1c9b5a444e44c709b7c473ca156378c" title="DFRobotPowerShield::outputEnabled Returns the state of the auxiliary output as controlled..." alt="" coords="100,1349,332,1379"/>
+<area shape="rect" href="$test__PCA9685_8cpp.html#a96383a491e9af6162202475e8b97f120" title="pca9685_printConfig" alt="" coords="147,1243,285,1272"/>
+<area shape="rect" href="$classPCA9685.html#a55c9ab6e79557fd81da7fb32a721154f" title="To set the cycle &amp; phase of an output." alt="" coords="147,1403,285,1432"/>
+<area shape="rect" href="$classPCA9685.html#a85cbeb29ea72985bfc398bd38491704c" title="Sets the device&#39;s power mode." alt="" coords="140,1296,292,1325"/>
+<area shape="rect" href="$classMAX1704.html#a1e9e34028f6bf57dac389a465e3f3e3f" title="MAX1704::stateOfCharge" alt="" coords="131,1456,301,1485"/>
+<area shape="rect" href="$classMpu6050.html#a23946e313e81cc7e6d9123a1f0258434" title="Mpu6050::temperature_celsius" alt="" coords="116,1509,316,1539"/>
+<area shape="rect" href="$classMpu6050.html#a60a2f79d849ff3854b44bc88c5bee1dc" title="Mpu6050::updateData" alt="" coords="143,228,289,257"/>
+<area shape="rect" href="$classDFRobotPowerShield.html#a8bfd9c7a02595ec44a254f920d703b29" title="DFRobotPowerShield::voltage." alt="" coords="120,1563,312,1592"/>
+<area shape="rect" href="$classMpu6050.html#aa5f5c1e5e00011891a7e753693a13fc5" title="accelerometerCountsPerG Returns the constant corresponding to the number of &quot;counts&quot;..." alt="" coords="679,305,913,335"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#a90e1e69c21a7e6e7db110d3a647894aa" title="Adafruit_BMP180::read_uint16" alt="" coords="981,717,1179,747"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#a94ed2bb21ce05f467ef306e606993524" title="Adafruit_BMP180::read_uint8" alt="" coords="984,611,1176,640"/>
+<area shape="rect" href="$classAdafruit__BMP180.html#ace815657ab11566a3d65a5459e355124" title="Adafruit_BMP180::writeCommand" alt="" coords="972,664,1188,693"/>
+<area shape="rect" href="$classMpu6050.html#a89cfd2d10f0c3c9890381850031b3acd" title="gyroscopeCountsPerDeg_s Returns the constant corresponding to the number of &quot;counts&quot;..." alt="" coords="381,952,621,981"/>
+<area shape="rect" href="$classMpu6050.html#adb18ee6cf12d145437e42d64ec4dd442" title="Mpu6050::rawGyroX" alt="" coords="432,899,571,928"/>
+<area shape="rect" href="$classMpu6050.html#ad66318e3fd8b5ed9a39af447a4c0a7d2" title="Mpu6050::rawGyroY" alt="" coords="432,845,571,875"/>
+<area shape="rect" href="$classMpu6050.html#afcc731cd596ffec0fee4108581d6163a" title="Mpu6050::rawGyroZ" alt="" coords="432,1005,571,1035"/>
+<area shape="rect" href="$classPCA9685.html#ab0dffd7507a8acce84eaf4b740c46efd" title="Convenience function to read a 8&#45;bits unisgned data from the register argAddress..." alt="" coords="732,1509,860,1539"/>
+<area shape="rect" href="$classPCA9685.html#a1446fb0c109681ad1a7b6ba609dea958" title="Returns the value that has been set by the constructor." alt="" coords="437,1376,565,1405"/>
+<area shape="rect" href="$classPCA9685.html#a08219d87033026511cf345d6f7805c8f" title="To know whether the device can be restored from a previous state, for example after..." alt="" coords="428,1643,575,1672"/>
+<area shape="rect" href="$classPCA9685.html#ac83dee2758549b7d00e99ae55837d37a" title="Returns the value that has been set by the constructor." alt="" coords="709,1137,883,1167"/>
+<area shape="rect" href="$classPCA9685.html#ac6a5ba908d60962787b7e04586a27b30" title="Returns the PCA9685&#39;s outputs state of when its /OE pin is set to logical 1 (==output..." alt="" coords="399,1696,604,1725"/>
+<area shape="rect" href="$classPCA9685.html#a627a477f8eca4edba4fb0c8926dd1a64" title="Returns the MODE1_EXTCLK bit state." alt="" coords="397,1749,605,1779"/>
+<area shape="rect" href="$classPCA9685.html#ac31c3a4916e2f1bbc2241e249047fd78" title="PCA9685::ledAllCallAddressEnabled" alt="" coords="385,1216,617,1245"/>
+<area shape="rect" href="$classPCA9685.html#a38d3b79f31580a2f21728d7cfd9ec8cb" title="Returns the event type on which the output will be changed." alt="" coords="404,1269,599,1299"/>
+<area shape="rect" href="$classPCA9685.html#a1f28ed7d478206afcb856cf5042b444d" title="Returns the PWM output frequency, calculated from the chip&#39;s prescaler and the..." alt="" coords="412,1112,591,1141"/>
+<area shape="rect" href="$classPCA9685.html#a1f12284c299c084c5648634f90c97d51" title="To know whether the output logical state is inverted or not." alt="" coords="403,1323,600,1352"/>
+<area shape="rect" href="$classPCA9685.html#a3945fc89891a9cb342edc4835df30282" title="To get the output driver&#39;s internal structure type." alt="" coords="416,1429,587,1459"/>
+<area shape="rect" href="$classPCA9685.html#ae450cd77d36495322c7a566b64a61380" title="PCA9685::subAddress1Enabled" alt="" coords="399,1483,604,1512"/>
+<area shape="rect" href="$classPCA9685.html#a7a2e2e3e54ed2f79c82875752495dbd7" title="PCA9685::subAddress2Enabled" alt="" coords="399,1536,604,1565"/>
+<area shape="rect" href="$classPCA9685.html#ac1dc9b45bf1ad7b2b7e466e241e0ecfe" title="PCA9685::subAddress3Enabled" alt="" coords="399,1589,604,1619"/>
+</map>

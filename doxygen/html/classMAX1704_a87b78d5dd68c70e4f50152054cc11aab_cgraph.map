@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" href="$classMAX1704.html#aa55ae1f69add7957878c932eae121ee7" title="MAX1704::alertThreshold" alt="" coords="208,5,376,35"/>
+<area shape="rect" href="$classMAX1704.html#ace27a404b82204a586c39dea66eab04f" title="MAX1704::isAlerting" alt="" coords="223,59,361,88"/>
+<area shape="rect" href="$classMAX1704.html#ab473db0745c1dbf3ef733f5dbc2a91bf" title="MAX1704::isSleeping" alt="" coords="219,165,365,195"/>
+<area shape="rect" href="$classMAX1704.html#a16b66420d980d700a2854bd372aab97d" title="MAX1704::sleep" alt="" coords="436,192,553,221"/>
+<area shape="rect" href="$classMAX1704.html#ae0334ad56c38a4661fa394dd1b32ea12" title="MAX1704::version" alt="" coords="228,112,356,141"/>
+<area shape="rect" href="$classMAX1704.html#a25fc4854e4703351413506af27d44f01" title="MAX1704::readFrom" alt="" coords="425,85,564,115"/>
+</map>

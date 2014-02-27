@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$classMpu6050.html#a89cfd2d10f0c3c9890381850031b3acd" title="gyroscopeCountsPerDeg_s Returns the constant corresponding to the number of &quot;counts&quot;..." alt="" coords="213,5,453,35"/>
+<area shape="rect" href="$classMpu6050.html#adb18ee6cf12d145437e42d64ec4dd442" title="Mpu6050::rawGyroX" alt="" coords="264,59,403,88"/>
+</map>

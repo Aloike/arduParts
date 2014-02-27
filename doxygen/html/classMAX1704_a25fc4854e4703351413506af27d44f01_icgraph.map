@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" href="$classMAX1704.html#aa55ae1f69add7957878c932eae121ee7" title="MAX1704::alertThreshold" alt="" coords="196,5,364,35"/>
+<area shape="rect" href="$classMAX1704.html#ace27a404b82204a586c39dea66eab04f" title="MAX1704::isAlerting" alt="" coords="211,59,349,88"/>
+<area shape="rect" href="$classMAX1704.html#ab473db0745c1dbf3ef733f5dbc2a91bf" title="MAX1704::isSleeping" alt="" coords="207,112,353,141"/>
+<area shape="rect" href="$classMAX1704.html#a1e9e34028f6bf57dac389a465e3f3e3f" title="MAX1704::stateOfCharge" alt="" coords="195,219,365,248"/>
+<area shape="rect" href="$classMAX1704.html#ae0334ad56c38a4661fa394dd1b32ea12" title="MAX1704::version" alt="" coords="216,165,344,195"/>
+<area shape="rect" href="$classMAX1704.html#a87b78d5dd68c70e4f50152054cc11aab" title="MAX1704::showConfig" alt="" coords="415,85,567,115"/>
+<area shape="rect" href="$test__Sparkfun__fuelGauge_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="616,85,669,115"/>
+<area shape="rect" href="$test__Sparkfun__fuelGauge_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="468,219,513,248"/>
+</map>

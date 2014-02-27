@@ -1,0 +1,19 @@
+<map id="G" name="G">
+<area shape="rect" href="$classPCA9685.html#aa47a35bb8e120accf4157bd869be0c18" title="Wakes up the device and restarts all of the previously active PWM channels if any..." alt="" coords="524,111,644,140"/>
+<area shape="rect" href="$classPCA9685.html#a59af34f2cf8182c6022be2ace5f957d1" title="To set whether the device will auto&#45;increment registers number (when multiple&#45;read/write)..." alt="" coords="196,320,431,349"/>
+<area shape="rect" href="$classPCA9685.html#a1d524caa7350c53f91ba390a90b10c7a" title="To set the PCA9685&#39;s outputs state for when the /OE pin is set to logical 1 (==device&#39;s..." alt="" coords="729,60,953,89"/>
+<area shape="rect" href="$classPCA9685.html#aa375a2f897bf7a0d7b01808e89b82e7a" title="To set whether the device will answer to &quot;Led All Call&quot; address." alt="" coords="187,373,440,403"/>
+<area shape="rect" href="$classPCA9685.html#a55c9ab6e79557fd81da7fb32a721154f" title="To set the cycle &amp; phase of an output." alt="" coords="244,267,383,296"/>
+<area shape="rect" href="$classPCA9685.html#ab63165bcfa9edc6cace50c41ed96c2a0" title="To set the event type on which the output will be changed." alt="" coords="205,427,421,456"/>
+<area shape="rect" href="$classPCA9685.html#acec9bda7d4e65fa8998fc228f6a39a3d" title="To set the value of the prescale that will be used to divide internal counter&#39;s..." alt="" coords="488,164,680,193"/>
+<area shape="rect" href="$classPCA9685.html#a5797b579471ed2940bebaeaf8de62b1b" title="To set wether the output&#39;s logical state is inverted or not. Applicable when..." alt="" coords="204,480,423,509"/>
+<area shape="rect" href="$classPCA9685.html#afc54afe1dfd11e15577493685ceb314e" title="To set the output driver&#39;s internal structure type." alt="" coords="217,533,409,563"/>
+<area shape="rect" href="$classPCA9685.html#a85cbeb29ea72985bfc398bd38491704c" title="Sets the device&#39;s power mode." alt="" coords="237,213,389,243"/>
+<area shape="rect" href="$classPCA9685.html#a583e71b0b70a59ce35cac77a11643f8b" title="PCA9685::setSubAddress1Enabled" alt="" coords="201,587,425,616"/>
+<area shape="rect" href="$classPCA9685.html#aea23c1b1147569b3b4acef255e1347aa" title="PCA9685::setSubAddress2Enabled" alt="" coords="201,640,425,669"/>
+<area shape="rect" href="$classPCA9685.html#a60bd2a006b560f7facfb5f4b196181b5" title="PCA9685::setSubAddress3Enabled" alt="" coords="201,693,425,723"/>
+<area shape="rect" href="$classPCA9685.html#a5450d95643bf09c9a5c5276971901294" title="To use an external clock source instead of the internal one." alt="" coords="211,747,416,776"/>
+<area shape="rect" href="$test__PCA9685_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="1003,139,1056,168"/>
+<area shape="rect" href="$test__PCA9685_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="561,268,607,297"/>
+<area shape="rect" href="$classPCA9685.html#a3886b92c262f51a0a236a42cacc36034" title="Calculates then sets internal counter&#39;s prescale value to let the output&#39;s..." alt="" coords="741,164,941,193"/>
+</map>
