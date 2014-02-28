@@ -1,3 +1,32 @@
+/**
+ *  @file   PCA9685.cpp
+ *  @brief  Implementation file for PCA9685 class.
+ *  @author GOM
+ *
+ * @copyright    Copyright © 2014 GOM - X11 License\n
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *  +   The above copyright notice and this permission notice shall be included
+ *      in all copies or substantial portions of the Software.
+ *  +   The Software is provided "as is", without warranty of any kind, express
+ *      or implied, including but not limited to the warranties of
+ *      merchantability, fitness for a particular purpose and noninfringement.
+ *      In no event shall the authors or copyright holders be liable for any
+ *      claim, damages or other liability, whether in an action of contract,
+ *      tort or otherwise, arising from, out of or in connection with the
+ *      Software or the use or other dealings in the Software.
+ *  +   Except as contained in this notice, the name(s) of (the) Author shall
+ *      not be used in advertising or otherwise to promote the sale, use or
+ *      other dealings in this Software without prior written authorization
+ *      from (the )Author.
+ *
+ *  @date   2014-02-28  Fri.    18-26-00    Creation.
+ */
+
 #include "PCA9685.h"
 
 #include <Wire.h>
@@ -11,11 +40,7 @@
 #endif
 
 
-
-#define CMD_MASK_READ   (0x01)  /*!< Mask to perform read operations - firt bit set to 1 for read operation, 0 for write operation. See datasheet page 7 fig.4. */
-
-#define CMD_SOFTWARE_RESET  (0x06)  /*!< datasheet p.8 */
-
+#define CMD_SOFTWARE_RESET  (0x06)  /*!< datasheet p.8 */s
 
 
 /* ######################################################################### */
@@ -192,7 +217,7 @@
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @brief PCA9685::PCA9685  Constructor; sets needed parameters.
+ * @brief Constructor; sets needed parameters.
  * @param argAddress The address of the PCA9685. Range: [0x40;0x7F].
  * @param argClockFrequency The clock frequency of the device counter.
  *
@@ -217,7 +242,7 @@ PCA9685::PCA9685(uint8_t argAddress, double argClockFrequency)
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @brief PCA9685::address To get the address that is used to communicate with
+ * @brief To get the address that is used to communicate with
  * the PCA9685. Set by constructor.
  *
  * @return The device's address.
@@ -230,7 +255,7 @@ uint8_t PCA9685::address() const
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @brief PCA9685::canRestart To know whether the device can be restored from a
+ * @brief To know whether the device can be restored from a
  * previous state, for example after the device has been put to sleep.
  *
  * @return true     if the device can be "restarted".
@@ -252,8 +277,8 @@ bool    PCA9685::canRestart()
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @brief PCA9685::disabledOutputPolicy returns the PCA9685's outputs state
- * of when its /OE pin is set to logical 1 (==output disabled).
+ * @brief Returns the PCA9685's outputs state of when its /OE pin is set to
+ * logical 1 (==output disabled).
  * @return a value from the PCA9685::OutputPolicyWhenDisabled enum.
  */
 PCA9685::OutputPolicyWhenDisabled PCA9685::disabledOutputPolicy()
@@ -274,7 +299,7 @@ PCA9685::OutputPolicyWhenDisabled PCA9685::disabledOutputPolicy()
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @brief PCA9685::clockFrequency returns the frequency of the clock as set by
+ * @brief Returns the frequency of the clock as set by
  * the constructor.
  *
  * @return  The frequency of the clock (Hertz).
@@ -287,7 +312,7 @@ double  PCA9685::clockFrequency() const
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @brief PCA9685::init sets up the initial conditions to let the device work.
+ * @brief Sets up the initial conditions to let the device work.
  *
  * Begins Wire (I2C interface) and resets the device.
  */
@@ -300,8 +325,8 @@ void PCA9685::init()
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @brief PCA9685::isAutoIncrementingRegister returns whether the device will
- * auto-increment registers number (when multiple-read/write) or not.
+ * @brief Returns whether the device will auto-increment registers number (when
+ * multiple-read/write) or not.
  *
  * @return  true    if auto-increment of register number is enabled;
  * @return  false   if auto-increment is disabled.
@@ -314,9 +339,9 @@ bool    PCA9685::isAutoIncrementingRegister()
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @brief PCA9685::isSleeping returns the power state of the device.
- * @return  true    if the device is in low-power mode (internal oscillator off)
- * @return  false   if the device is in normal mode.
+ * @brief Returns the the device's power mode.
+ * @return  **true**    if the device is in low-power mode (internal oscillator off)
+ * @return  **false**   if the device is in normal mode.
  */
 bool    PCA9685::isSleeping()
 {
@@ -326,7 +351,7 @@ bool    PCA9685::isSleeping()
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @brief PCA9685::isUsingExternalClock Returns the MODE1_EXTCLK bit state.
+ * @brief Returns the MODE1_EXTCLK bit state.
  * @return  true    if the device is using external clock input.
  * @return  false   if the device is using internal oscillator as clock source.
  *
@@ -341,7 +366,7 @@ bool    PCA9685::isUsingExternalClock()
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @brief PCA9685::ledAllCallAddressEnabled
+ * @brief
  * @return  true    if the device will answer to Led All Call address;
  * @return  false   otherwise.
  */
@@ -353,9 +378,10 @@ bool    PCA9685::ledAllCallAddressEnabled()
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @brief PCA9685::outputChangeEvent returns the event type on which the output
- * will be changed.
+ * @brief Returns the event type on which the output will be changed.
  * @return
+ *
+ * @see PCA9685::OutputChangeEvent
  */
 PCA9685::OutputChangeEvent  PCA9685::outputChangeEvent()
 {
@@ -369,11 +395,12 @@ PCA9685::OutputChangeEvent  PCA9685::outputChangeEvent()
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @fn float PCA9685::outputFrequency()
  * @brief Returns the PWM output frequency, calculated from the chip's
  * prescaler and the PCA9685::m_clockFrequency.
+ *
+ * @see PCA9685::setOutputFrequency()
  */
-float   PCA9685::outputFrequency()
+double  PCA9685::outputFrequency()
 {
     return (this->clockFrequency() / ((this->outputPrescale() + 1) * 4096.0) );
 }
@@ -381,9 +408,8 @@ float   PCA9685::outputFrequency()
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @fn uint8_t PCA9685::outputPrescale()
- * @brief To get the value of the prescale that will be
- * used to divide internal counter's input clock. Sets the output frequency.
+ * @brief To get the value of the prescale that will be used to divide internal
+ * counter's input clock. Sets the output frequency.
  * @return uint8_t The prescale value.
  */
 uint8_t PCA9685::outputPrescale()
@@ -394,8 +420,7 @@ uint8_t PCA9685::outputPrescale()
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @brief PCA9685::outputStateInverted To know whether the output logical state
- * is inverted or not.
+ * @brief To know whether the output logical state is inverted or not.
  *  @return true    if output logical state is inverted.
  *  @return false   otherwise.
  */
@@ -406,7 +431,10 @@ bool    PCA9685::outputStateInverted()
 
 /* ######################################################################### */
 /* ######################################################################### */
-
+/**
+ * @brief   To get the output driver's internal structure type.
+ * @return
+ */
 PCA9685::OutputStructure    PCA9685::outputStructure()
 {
     if( (this->read_8u( REG_MODE2 ) & MASK_MODE2_OUTDRV) == 0 ) {
@@ -418,7 +446,13 @@ PCA9685::OutputStructure    PCA9685::outputStructure()
 
 /* ######################################################################### */
 /* ######################################################################### */
-
+/**
+ * @brief Convenience function to read a 8-bits unisgned data from the register
+ * \p argAddress of the device at address PCA9685::m_address.
+ *
+ * @param argAddress    The uint8_t address of the register we want to read.
+ * @return  uint8_t the read byte.
+ */
 uint8_t PCA9685::read_8u(const uint8_t &argAddress)
 {
     Wire.beginTransmission( this->m_address );
@@ -432,7 +466,6 @@ uint8_t PCA9685::read_8u(const uint8_t &argAddress)
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @fn void PCA9685::reset()
  * @brief Sends a Software Reset Call (SWRST Call) command on the I2C bus.
  *
  * @warning May interfere with other devices - it looks like a standard I2C
@@ -447,7 +480,16 @@ void PCA9685::reset()
 
 /* ######################################################################### */
 /* ######################################################################### */
-
+/**
+ * @brief Wakes up the device and restarts all of the previously active PWM
+ * channels if any.
+ *
+ * @return  false   If the device can't restart ( see \ref PCA9685::canRestart()
+ * for more details);
+ * @return  true    otherwise.
+ *
+ * @see PCA9685::canRestart()
+ */
 bool    PCA9685::restart()
 {
 
@@ -505,7 +547,13 @@ void    PCA9685::setAllOn()
 
 /* ######################################################################### */
 /* ######################################################################### */
-
+/**
+ * @brief To set whether the device will auto-increment registers number (when
+ * multiple-read/write) or not.
+ *
+ * @param   argEnableAutoIncrement The auto-increment status (true: enabled,
+ * false:disabled).
+ */
 void    PCA9685::setAutoIncrementRegister(bool argEnableAutoIncrement)
 {
     uint8_t reg_content = this->read_8u( REG_MODE1 );
@@ -521,7 +569,12 @@ void    PCA9685::setAutoIncrementRegister(bool argEnableAutoIncrement)
 
 /* ######################################################################### */
 /* ######################################################################### */
-
+/**
+ * @brief To set whether the device will answer to "Led All Call" address.
+ * @param argEnabled
+ *          + **true**  The device will answer;
+ *          + **false** The device won't answer.
+ */
 void    PCA9685::setLedAllCallAddressEnabled(bool argEnabled)
 {
     uint8_t reg_content = this->read_8u( REG_MODE1 );
@@ -537,7 +590,14 @@ void    PCA9685::setLedAllCallAddressEnabled(bool argEnabled)
 
 /* ######################################################################### */
 /* ######################################################################### */
-
+/**
+ * @brief To set the PCA9685's outputs state for when the /OE pin is set to
+ * logical 1 (==device's output disabled).
+ *
+ * @param argPolicy The policy to be set.
+ *
+ * @see OutputPolicyWhenDisabled
+ */
 void    PCA9685::setDisabledOutputPolicy(OutputPolicyWhenDisabled argPolicy)
 {
     uint8_t reg_content = this->read_8u( REG_MODE2 );
@@ -574,15 +634,15 @@ void    PCA9685::setDisabledOutputPolicy(OutputPolicyWhenDisabled argPolicy)
  * \return  false   if a parameter error has been detected
  * \return  true    otherwise.
 
-Abstract from the datasheet:
+Abstract from the datasheet:\n
 The turn-on time of each LED driver output and the duty cycle of PWM can be
-controlled independently using the LEDn_ON and LEDn_OFF registers.
+controlled independently using the LEDn_ON and LEDn_OFF registers.\n
 There will be two 12-bit registers per LED output. These registers will be
 programmed by the user. Both registers will hold a value from 0 to 4095. One
 12-bit register will hold a value for the ON time and the other 12-bit register
 will hold the value for the OFF time. The ON and OFF times are compared with
 the value of a 12-bit counter that will be running continuously from 0000h to
-0FFFh (0 to 4095 decimal).
+0FFFh (0 to 4095 decimal).\n
 The ON time, which is programmable, will be the time the LED output will be
 asserted and the OFF time, which is also programmable, will be the time when
 the LED output will be negated. In this way, the phase shift becomes completely
@@ -612,7 +672,13 @@ bool    PCA9685::setOutput(uint8_t argOutputNbr, uint16_t argOn, uint16_t argOff
 
 /* ######################################################################### */
 /* ######################################################################### */
-
+/**
+ * @brief   To set the event type on which the output will be changed.
+ *
+ * @param   argEvent    The type of event.
+ *
+ * @see PCA9685::OutputChangeEvent
+ */
 void    PCA9685::setOutputChangeEvent(OutputChangeEvent argEvent)
 {
     uint8_t reg_content = this->read_8u( REG_MODE2 );
@@ -627,11 +693,29 @@ void    PCA9685::setOutputChangeEvent(OutputChangeEvent argEvent)
 
 /* ######################################################################### */
 /* ######################################################################### */
-
-bool    PCA9685::setOutputFrequency(float argFrequency_Hz)
+/**
+ * @brief Calculates then sets internal counter's prescale value to let the
+ * output's frequency be as close as possible to \p argFrequency_Hz.
+ *
+ * The outputs frequency depends on the internal counter's prescale value and
+ * its clock source's frequency.\n
+ * This function calculates the reachable frequency range using
+ * \ref PCA9685::clockFrequency(), checks if \p argFrequency_Hz is included in
+ * it, then calculates and sets the prescale value to be the closest to
+ * \p argFrequency_Hz.
+ *
+ * @param argFrequency_Hz   The target output frequency.
+ *
+ * @return  **true**    If \p argFrequency_Hz is in the reachable range;
+ * @return  **false**   otherwise.
+ *
+ * @see PCA9685::clockFrequency(), PCA9685::isUsingExternalClock(),
+ * PCA9685::outputPrescale()
+ */
+bool    PCA9685::setOutputFrequency(double argFrequency_Hz)
 {
-    float maxFrequency  = (this->clockFrequency() / 4096.0 );
-    float minFrequency  = (this->clockFrequency() / ((0xFF + 1) * 4096.0) );
+    double maxFrequency  = (this->clockFrequency() / 4096.0 );
+    double minFrequency  = (this->clockFrequency() / ((0xFF + 1) * 4096.0) );
 
     DBG( String( "minFrequency: ") + String( (long) minFrequency ) + "Hz" );
     DBG( String( "maxFrequency: ") + String( (long) maxFrequency ) + "Hz" );
@@ -653,7 +737,7 @@ bool    PCA9685::setOutputFrequency(float argFrequency_Hz)
     }
 
     float prescaleValue
-            = ( this->m_clockFrequency / (4096.0 * argFrequency_Hz) ) - 1;
+            = ( this->clockFrequency() / (4096.0 * argFrequency_Hz) ) - 1;
     DBG( "Estimated prescale == " + (long)prescaleValue );
     uint8_t prescale = floor( prescaleValue + 0.5 );
     DBG( "Final pre-scale == " + prescale );
@@ -664,11 +748,16 @@ bool    PCA9685::setOutputFrequency(float argFrequency_Hz)
 
 /* ######################################################################### */
 /* ######################################################################### */
-
+/**
+ * @brief To set the value of the prescale that will be used to divide internal
+ * counter's input clock.
+ *
+ * @param argPrescale   The new prescale value. Range [0x00;0xFF] / [0;255].
+ */
 void    PCA9685::setOutputPrescale(uint8_t argPrescale)
 {
     /* 1- Go to sleep if PCA9685 was awake */
-    bool wasSleeping   = ! this->isSleeping();
+    bool wasSleeping   = this->isSleeping();
     if( ! wasSleeping )
         this->setSleeping( true );
 
@@ -682,9 +771,12 @@ void    PCA9685::setOutputPrescale(uint8_t argPrescale)
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @brief PCA9685::setOutputStateInverted   To set wether the output's logical
- * state is inverted or not. Applicable when /OE pin==0
+ * @brief To set wether the output's logical state is inverted or not.
+ * Applicable when /OE pin==0.
+ *
  * @param argInverted
+ *          + **true**  The output's logical state will be inverted;
+ *          + **false** The output's logical state will NOT be inverted.
  */
 void    PCA9685::setOutputStateInverted(bool argInverted)
 {
@@ -701,7 +793,13 @@ void    PCA9685::setOutputStateInverted(bool argInverted)
 
 /* ######################################################################### */
 /* ######################################################################### */
-
+/**
+ * @brief To set the output driver's internal structure type.
+ *
+ * @param argStructure The structure type.
+ *
+ * @see PCA9685::OutputStructure
+ */
 void    PCA9685::setOutputStructure(OutputStructure argStructure)
 {
     uint8_t reg_content = this->read_8u( REG_MODE2 );
@@ -716,7 +814,28 @@ void    PCA9685::setOutputStructure(OutputStructure argStructure)
 
 /* ######################################################################### */
 /* ######################################################################### */
-
+/**
+ * @brief Sets the device's power mode.
+ *
+ * When waking up the device (\p argIsSleeping==false) a delay of 500
+ * microseconds is applied to avoid erroneous control registers readings.
+ *
+ * @note
+ * It takes the oscillator up to 500µs to be up and running when waking up.
+ * Timings on LEDn outputs are not guaranteed if PWM control registers are
+ * accessed within the 500 μs window.
+ * \par
+ * @note There is no start-up delay required when using the EXTCLK pin as the PWM
+ * clock.
+ * \par
+ * @note No PWM control is possible when the oscillator is off. When the
+ * oscillator is off (Sleep mode) the LEDn outputs cannot be turned on, off or
+ * dimmed/blinked.
+ *
+ * @param argIsSleeping
+ *          +   **true**    Let the device go to sleep.
+ *          +   **false**   Wake up the device.
+ */
 void    PCA9685::setSleeping(bool argIsSleeping)
 {
     uint8_t reg_content = this->read_8u( REG_MODE1 );
@@ -725,10 +844,17 @@ void    PCA9685::setSleeping(bool argIsSleeping)
         M_BIT_SET( reg_content, MASK_MODE1_SLEEP );
     } else {
         M_BIT_CLEAR( reg_content, MASK_MODE1_SLEEP );
-        delayMicroseconds( 500 );
     }
 
+    /* Write register's content */
     this->write_8u( REG_MODE1, reg_content );
+
+    if( argIsSleeping == false ) {
+        /* Because it takes the oscillator up to 500µs to wake up, we apply a
+         * delay to be shure we won't do erroneous readings on PWM control
+         * registers. */
+        delayMicroseconds( 500 );
+    }
 }
 
 /* ######################################################################### */
@@ -782,7 +908,6 @@ void    PCA9685::setSubAddress3Enabled(bool argEnabled)
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @fn void PCA9685::setUseExternalClock(void)
  * @brief To use an external clock source instead
  * of the internal one.
  *
@@ -830,7 +955,6 @@ bool    PCA9685::subAddress3Enabled()
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * @fn  void PCA9685::write_8u(const uint8_t &argAddress, const uint8_t &argData)
  * @brief Convenience function to write a 8-bits
  * unisgned \p argData into the register \p argAddress of the device at address
  * PCA9685::m_address.
