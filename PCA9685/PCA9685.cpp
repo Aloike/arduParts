@@ -258,8 +258,8 @@ uint8_t PCA9685::address() const
  * @brief To know whether the device can be restored from a
  * previous state, for example after the device has been put to sleep.
  *
- * @return true     if the device can be "restarted".
- * @return false    if no previous state can be restored.
+ * @return  **true**    if the device can be "restarted".
+ * @return  **false**   if no previous state can be restored.
  *
  * @note    Conditions that could make the device not to be restored:
  *          +   Power cycle
@@ -328,8 +328,8 @@ void PCA9685::init()
  * @brief Returns whether the device will auto-increment registers number (when
  * multiple-read/write) or not.
  *
- * @return  true    if auto-increment of register number is enabled;
- * @return  false   if auto-increment is disabled.
+ * @return  **true**    if auto-increment of register number is enabled;
+ * @return  **false**   if auto-increment is disabled.
  */
 bool    PCA9685::isAutoIncrementingRegister()
 {
@@ -352,8 +352,8 @@ bool    PCA9685::isSleeping()
 /* ######################################################################### */
 /**
  * @brief Returns the MODE1_EXTCLK bit state.
- * @return  true    if the device is using external clock input.
- * @return  false   if the device is using internal oscillator as clock source.
+ * @return  **true**    if the device is using external clock input.
+ * @return  **false**   if the device is using internal oscillator as clock source.
  *
  * To know whether the internal counter is using internal clock source
  * (oscillator) or external clock (EXTCLK pin).
@@ -367,8 +367,8 @@ bool    PCA9685::isUsingExternalClock()
 /* ######################################################################### */
 /**
  * @brief
- * @return  true    if the device will answer to Led All Call address;
- * @return  false   otherwise.
+ * @return  **true**    if the device will answer to Led All Call address;
+ * @return  **false**   otherwise.
  */
 bool    PCA9685::ledAllCallAddressEnabled()
 {
@@ -421,8 +421,8 @@ uint8_t PCA9685::outputPrescale()
 /* ######################################################################### */
 /**
  * @brief To know whether the output logical state is inverted or not.
- *  @return true    if output logical state is inverted.
- *  @return false   otherwise.
+ *  @return **true**    if output logical state is inverted.
+ *  @return **false**   otherwise.
  */
 bool    PCA9685::outputStateInverted()
 {
@@ -484,9 +484,9 @@ void PCA9685::reset()
  * @brief Wakes up the device and restarts all of the previously active PWM
  * channels if any.
  *
- * @return  false   If the device can't restart ( see \ref PCA9685::canRestart()
- * for more details);
- * @return  true    otherwise.
+ * @return  **false**   If the device can't restart
+ * ( see \ref PCA9685::canRestart() for more details);
+ * @return  **true**    otherwise.
  *
  * @see PCA9685::canRestart()
  */
@@ -626,13 +626,15 @@ void    PCA9685::setDisabledOutputPolicy(OutputPolicyWhenDisabled argPolicy)
 /* ######################################################################### */
 /* ######################################################################### */
 /**
- * \fn bool PCA9685::setOutput(uint8_t argOutputNbr, uint16_t argOn, uint16_t argOff)
  * \brief To set the cycle & phase of an output.
  * \param argOutputNbr  The output to control. Range: [0;15]
- * \param argOn     The value of the internal timer at which the output will be enabled.  Range: [0;4095].
- * \param argOff    The value of the internal timer at which the output will be disabled. Range: [0;4095].
- * \return  false   if a parameter error has been detected
- * \return  true    otherwise.
+ * \param argOn     The value of the internal timer at which the output will be
+ *        enabled.  Range: [0;4095].
+ * \param argOff    The value of the internal timer at which the output will be
+ *        disabled. Range: [0;4095].
+ *
+ * \return  **false**   if a parameter error has been detected
+ * \return  **true**    otherwise.
 
 Abstract from the datasheet:\n
 The turn-on time of each LED driver output and the duty cycle of PWM can be
