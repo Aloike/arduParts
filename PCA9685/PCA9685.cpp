@@ -421,6 +421,48 @@ double  PCA9685::outputFrequency()
 /* ######################################################################### */
 /* ######################################################################### */
 /**
+ * @brief To know whether output \p argOutputNbr is forced "full OFF" or not.
+ *
+ * @param argOutputNbr      The output to be checked
+ * @return  @c **true**     if the output is forced disabled (no PWM);
+ * @return  @c **false**    if the output is not forced disabled.
+ *
+ * @see PCA9685::outputIsForcedFullOn()
+ */
+bool    PCA9685::outputIsForcedFullOff(uint8_t argOutputNbr)
+{
+    uint8_t reg_addr    = REG_LED0_OFF_H;
+    reg_addr            += (4 * argOutputNbr);
+
+    return (this->read_8u( reg_addr ) & MASK_LEDn_OFF_H_FULLOFF);
+}
+
+/* ######################################################################### */
+/* ######################################################################### */
+/**
+ * @brief To know whether output \p argOutputNbr is forced "full ON" or not.
+ *
+ * @attention The output can be forced enabled and not working because by
+ * default the output is forced disabled and the LEDn_OFF_H_FULLOFF bit
+ * ("full 0FF") overrides the LEDn_ON_H_FULLON bit ("full ON").
+ *
+ * @param argOutputNbr      The output to be checked
+ * @return  @c **true**     if the output is forced enabled (no PWM);
+ * @return  @c **false**    if the output is not forced enabled.
+ *
+ * @see PCA9685::outputIsForcedFullOff()
+ */
+bool    PCA9685::outputIsForcedFullOn(uint8_t argOutputNbr)
+{
+    uint8_t reg_addr    = REG_LED0_ON_H;
+    reg_addr            += (4 * argOutputNbr);
+
+    return (this->read_8u( reg_addr ) & MASK_LEDn_ON_H_FULLON);
+}
+
+/* ######################################################################### */
+/* ######################################################################### */
+/**
  * @brief To get the value of the prescale that will be used to divide internal
  * counter's input clock. Sets the output frequency.
  *
@@ -642,6 +684,36 @@ void    PCA9685::setDisabledOutputPolicy(OutputPolicyWhenDisabled argPolicy)
 /* ######################################################################### */
 /* ######################################################################### */
 /**
+ * @brief To set \p argOutputNbr to be always ON/OFF depending
+ * on \p argEnabled.
+ *
+ * Convenience function to quickly set on/off an output.\n
+ * Internally calls PCA9685::setOutputForceFullOff()
+ * and PCA9685::setOutputForceFullOn().
+ *
+ * @param argOutputNbr  The output to be configured.\n
+ *                      @em Range: [0;PCA9685::OUTPUT_COUNT[.
+ * @param argEnabled
+ *          +   @c  **true**    The output will be ON (no PWM);
+ *          +   @c  **false**   The output will be OFF (no PWM).
+ *
+ * @return  @c **false**   If \p argOutputNbr is out of range;
+ * @return  @c **true**    otherwise.
+ */
+bool    PCA9685::setOutput_const(uint8_t argOutputNbr, bool argEnabled)
+{
+    if( argOutputNbr >= PCA9685::OUTPUT_COUNT ) {
+        return false;
+    }
+
+    this->setOutputForceFullOff(    argOutputNbr,   ! argEnabled );
+    this->setOutputForceFullOn(     argOutputNbr,   argEnabled );
+    return true;
+}
+
+/* ######################################################################### */
+/* ######################################################################### */
+/**
  * \brief To set the cycle & phase of an output.
 
 \par Abstract from the datasheet:
@@ -674,7 +746,7 @@ target frequency.
  * \return  <b>@c -3</b>    if \p argOff is not included in a valid range;
  * \return  <b>@c 0</b>     otherwise (no error detected).
  */
-int8_t  PCA9685::setOutput(uint8_t argOutputNbr, uint16_t argOn, uint16_t argOff)
+int8_t  PCA9685::setOutput_pwm(uint8_t argOutputNbr, uint16_t argOn, uint16_t argOff)
 {
     if( argOutputNbr >= OUTPUT_COUNT ) {
         return -1;
@@ -795,15 +867,32 @@ bool    PCA9685::setOutputForceFullOn( uint8_t argOutputNbr,
         return false;
     }
 
-    uint8_t reg_content = this->read_8u( REG_LED0_ON_H  + (4 * argOutputNbr) );
+    uint8_t reg_addr    = REG_LED0_ON_H;
+    reg_addr            += (4 * argOutputNbr);
+//    Serial.print( "PCA9685::setOutputForceFullOn(" );
+//    Serial.print( argOutputNbr, DEC );
+//    Serial.print( ", " );
+//    Serial.print( argForceFullOn? "true":"false" );
+//    Serial.println( ")" );
+//    Serial.print( "+-- reg_addr == 0x" );
+//    Serial.println( reg_addr, HEX );
 
+    uint8_t reg_content = this->read_8u( reg_addr );
+//    Serial.print( "+-- reg_content[in] == 0b" );
+//    Serial.println( reg_content, BIN );
+
+
+//    Serial.print( "+-- mask == 0x" );
+//    Serial.println( MASK_LEDn_ON_H_FULLON, HEX );
     if( argForceFullOn == true ) {
         M_BIT_SET( reg_content, MASK_LEDn_ON_H_FULLON );
     } else {
         M_BIT_CLEAR( reg_content, MASK_LEDn_ON_H_FULLON );
     }
 
-    this->write_8u( REG_LED0_ON_H  + (4 * argOutputNbr), reg_content );
+//    Serial.print( "+-- reg_content[out] == 0b" );
+//    Serial.println( reg_content, BIN );
+    this->write_8u( reg_addr, reg_content );
 }
 
 /* ######################################################################### */

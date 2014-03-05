@@ -191,9 +191,13 @@ public:
     void                        setDisabledOutputPolicy(OutputPolicyWhenDisabled argPolicy);
 
 
-    int8_t  setOutput( uint8_t argOutputNbr, uint16_t argOn, uint16_t argOff );
+    bool setOutput_const( uint8_t argOutputNbr, bool argEnabled );
+    int8_t  setOutput_pwm( uint8_t argOutputNbr, uint16_t argOn, uint16_t argOff );
 
+    bool    outputIsForcedFullOn( uint8_t argOutputNbr );
     bool    setOutputForceFullOn(uint8_t argOutputNbr, bool argForceFullOn );
+
+    bool    outputIsForcedFullOff( uint8_t argOutputNbr );
     bool    setOutputForceFullOff(uint8_t argOutputNbr, bool argForceFullOff );
 
 #if 0

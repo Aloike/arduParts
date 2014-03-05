@@ -117,6 +117,22 @@ void    pca9685_printConfig( PCA9685& argController )
             break;
     }
 
+
+    Serial.println( "    +-- Outputs configs:" );
+    for( uint8_t outputNbr = 0x00 ; outputNbr < PCA9685::OUTPUT_COUNT ; ++outputNbr )
+    {
+        Serial.print( "        +-- " );
+        Serial.println( outputNbr, DEC );
+
+        Serial.print( "            +-- outputIsForcedFullOn == " );
+        Serial.println(  controller.outputIsForcedFullOn( outputNbr ) ?
+                             "yes":"no" );
+
+        Serial.print( "            +-- outputIsForcedFullOff == " );
+        Serial.println(  controller.outputIsForcedFullOff( outputNbr ) ?
+                             "yes":"no" );
+    }
+
     Serial.println( "========================================" );
 }
 /* ######################################################################### */
@@ -145,6 +161,11 @@ void setup()
     controller.init();
     Serial.println( "[  OK  ]" );
 
+    Serial.print( "PCA9685 prepares output 0..............." );
+    controller.setOutputForceFullOff( 0, false );
+    Serial.println( "[  OK  ]" );
+
+    pca9685_printConfig( controller );
 
 #if 0
     /*
@@ -298,7 +319,7 @@ void loop()
         }
     }
 
-
+#if 0
     /* Print controller's configuration periodically */
     pca9685_printConfig( controller );
 
@@ -321,6 +342,25 @@ void loop()
             controller.setOutput( outputNbr, 0, val );
         }
     }
+#elif TEST_BLINK_SINGLE
+    controller.setOutputForceFullOn( 0, true );
+    delay( 500 );
+
+    controller.setOutputForceFullOn( 0, false );
+    delay( 500 );
+
+    Serial.println( "+-- end of loop" );
+#else
+    /* Control each output, one by one. */
+    for( int outputNbr = 0 ; outputNbr < PCA9685::OUTPUT_COUNT ; ++outputNbr )
+    {
+//        controller.setAllOff();
+//        controller.setOutputForceFullOn( outputNbr, true );
+        controller.setOutput_const( outputNbr, true );
+        delay( 100 );
+        controller.setOutput_const( outputNbr, false );
+    }
+#endif
 }
 
 /* ######################################################################### */
