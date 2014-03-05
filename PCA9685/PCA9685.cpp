@@ -165,7 +165,7 @@
 #define MASK_MODE1_RESTART  BIT_7   /*!< Read: Shows state of RESTART logic. Write: see datasheet section 7.3.1.1. */
 #define MASK_MODE1_EXTCLK   BIT_6   /*!< To use the EXTCLK pin. See datasheet. */
 #define MASK_MODE1_AI       BIT_5   /*!< Register Auto-Increment. Disabled if value = 0, enabled if 1. */
-#define MASK_MODE1_SLEEP    BIT_4   /*!< @value 0 if normal mode, @value 1 if low-power (oscillator off). */
+#define MASK_MODE1_SLEEP    BIT_4   /*!< @c **0** if normal mode, @c **1** if low-power (oscillator off). */
 #define MASK_MODE1_SUB1     BIT_3
 #define MASK_MODE1_SUB2     BIT_2
 #define MASK_MODE1_SUB3     BIT_1
