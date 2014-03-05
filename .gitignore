@@ -11,3 +11,4 @@
 *.lai
 *.la
 *.a
+doxygen_log_warnings.txt
