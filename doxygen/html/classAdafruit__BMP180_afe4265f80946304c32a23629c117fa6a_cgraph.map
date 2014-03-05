@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$classAdafruit__BMP180.html#a90e1e69c21a7e6e7db110d3a647894aa" title="Adafruit_BMP180::read_uint16" alt="" coords="299,5,496,35"/>
-<area shape="rect" href="$classAdafruit__BMP180.html#a94ed2bb21ce05f467ef306e606993524" title="Adafruit_BMP180::read_uint8" alt="" coords="301,59,493,88"/>
-<area shape="rect" href="$classAdafruit__BMP180.html#ace815657ab11566a3d65a5459e355124" title="Adafruit_BMP180::writeCommand" alt="" coords="289,112,505,141"/>
-</map>

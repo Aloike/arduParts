@@ -1,0 +1,6 @@
+digraph "MPU6050/" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_fb751723df196bc6046bbf8f04f1cb24 [shape=box, label="MPU6050", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_fb751723df196bc6046bbf8f04f1cb24.html"];
+}

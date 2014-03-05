@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$classMpu6050.html#abc68cfee9306e0f8936a7ab5e1de84f6" title="read is a common function to read multiple bytes from an I2C device." alt="" coords="169,5,276,35"/>
-<area shape="rect" href="$classMpu6050.html#a870332ecfad7679febb15ec0d173f12d" title="Mpu6050::write_reg" alt="" coords="156,59,289,88"/>
-<area shape="rect" href="$classMpu6050.html#a2fd5d4069b4ae93efcc1eebf380a01ce" title="Mpu6050::write" alt="" coords="339,59,448,88"/>
-</map>

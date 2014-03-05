@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$classPCA9685.html#a774a99813a19b1ae34dbca36fed649ce" title="Returns the the device&#39;s power mode." alt="" coords="249,5,393,35"/>
-<area shape="rect" href="$classPCA9685.html#a85cbeb29ea72985bfc398bd38491704c" title="Sets the device&#39;s power mode." alt="" coords="245,59,397,88"/>
-<area shape="rect" href="$classPCA9685.html#ad3d6eecf31511999b1c85b906f5f17d2" title="Convenience function to write a 8&#45;bits unisgned argData into the register argAddress..." alt="" coords="447,85,577,115"/>
-<area shape="rect" href="$classPCA9685.html#ab0dffd7507a8acce84eaf4b740c46efd" title="Convenience function to read a 8&#45;bits unisgned data from the register argAddress..." alt="" coords="448,19,576,48"/>
-</map>

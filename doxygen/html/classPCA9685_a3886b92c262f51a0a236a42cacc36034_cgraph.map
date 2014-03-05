@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$classPCA9685.html#ac83dee2758549b7d00e99ae55837d37a" title="Returns the value that has been set by the constructor." alt="" coords="263,5,436,35"/>
-<area shape="rect" href="$classPCA9685.html#acec9bda7d4e65fa8998fc228f6a39a3d" title="To set the value of the prescale that will be used to divide internal counter&#39;s..." alt="" coords="253,59,445,88"/>
-<area shape="rect" href="$classPCA9685.html#a774a99813a19b1ae34dbca36fed649ce" title="Returns the the device&#39;s power mode." alt="" coords="497,5,641,35"/>
-<area shape="rect" href="$classPCA9685.html#a85cbeb29ea72985bfc398bd38491704c" title="Sets the device&#39;s power mode." alt="" coords="493,59,645,88"/>
-<area shape="rect" href="$classPCA9685.html#ad3d6eecf31511999b1c85b906f5f17d2" title="Convenience function to write a 8&#45;bits unisgned argData into the register argAddress..." alt="" coords="695,85,825,115"/>
-<area shape="rect" href="$classPCA9685.html#ab0dffd7507a8acce84eaf4b740c46efd" title="Convenience function to read a 8&#45;bits unisgned data from the register argAddress..." alt="" coords="696,19,824,48"/>
-</map>

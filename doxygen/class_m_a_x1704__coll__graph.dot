@@ -1,0 +1,7 @@
+digraph "MAX1704"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MAX1704\n||+ stateOfCharge()\l+ showConfig()\l+ reset()\l+ quickStart()\l+ version()\l+ setAlertThreshold()\l+ alertThreshold()\l+ isSleeping()\l+ isAlerting()\l+ sleep()\l+ awake()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}

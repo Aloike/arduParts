@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$classMpu6050.html#af4bf20dd593d3bf396c0fbea8d94d78c" title="Mpu6050::init" alt="" coords="188,5,287,35"/>
-<area shape="rect" href="$classMpu6050.html#a60a2f79d849ff3854b44bc88c5bee1dc" title="Mpu6050::updateData" alt="" coords="164,59,311,88"/>
-<area shape="rect" href="$test__Mpu6050__main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="360,5,413,35"/>
-<area shape="rect" href="$test__Mpu6050__main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="364,59,409,88"/>
-</map>

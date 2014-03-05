@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$test__PCA9685_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="279,5,324,35"/>
-<area shape="rect" href="$classPCA9685.html#aa47a35bb8e120accf4157bd869be0c18" title="Wakes up the device and restarts all of the previously active PWM channels if any..." alt="" coords="485,56,605,85"/>
-<area shape="rect" href="$test__PCA9685_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="693,108,747,137"/>
-<area shape="rect" href="$classPCA9685.html#acec9bda7d4e65fa8998fc228f6a39a3d" title="To set the value of the prescale that will be used to divide internal counter&#39;s..." alt="" coords="205,160,397,189"/>
-<area shape="rect" href="$classPCA9685.html#a3886b92c262f51a0a236a42cacc36034" title="Calculates then sets internal counter&#39;s prescale value to let the output&#39;s..." alt="" coords="445,160,645,189"/>
-</map>

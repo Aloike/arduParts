@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$classMpu6050.html#a32d3d1614cfb77508097a9581933cade" title="Mpu6050::accelZ_g" alt="" coords="203,32,339,61"/>
-<area shape="rect" href="$classMpu6050.html#aa5f5c1e5e00011891a7e753693a13fc5" title="accelerometerCountsPerG Returns the constant corresponding to the number of &quot;counts&quot;..." alt="" coords="387,5,621,35"/>
-<area shape="rect" href="$classMpu6050.html#adbf2476a2c49aaba54810e974c3427fa" title="Mpu6050::rawAccelZ" alt="" coords="432,59,576,88"/>
-</map>

@@ -1,0 +1,4 @@
+\form#0:$ f_{out} = \frac { f_{clock} } { (prescale + 1) \times 4096 }$
+\form#1:$f_{clock}$
+\form#2:$prescale$
+\form#3:$\frac{1}{4096}$

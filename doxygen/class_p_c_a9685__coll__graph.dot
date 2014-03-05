@@ -1,0 +1,7 @@
+digraph "PCA9685"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{PCA9685\n|+ DEFAULT_ADDRESS\l+ DEFAULT_CLOCKFREQUENCY_HZ\l+ OUTPUT_COUNT\l# m_address\l# m_clockFrequency\l|+ PCA9685()\l+ init()\l+ reset()\l+ isSleeping()\l+ setSleeping()\l+ canRestart()\l+ restart()\l+ clockFrequency()\l+ isUsingExternalClock()\l+ setUseExternalClock()\land 27 more...\l# read_8u()\l# write_8u()\l# isAutoIncrementingRegister()\l# setAutoIncrementRegister()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}
