@@ -94,7 +94,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
-      <li><a href="#index_q"><span>q</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
@@ -157,8 +156,8 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>address()
 : <a class="el" href="class_p_c_a9685.html#a1446fb0c109681ad1a7b6ba609dea958">PCA9685</a>
 </li>
-<li>alertThreshold()
-: <a class="el" href="class_m_a_x1704.html#aa55ae1f69add7957878c932eae121ee7">MAX1704</a>
+<li>alertThreshold_pc()
+: <a class="el" href="class_m_a_x1704_x.html#a511b73880bc52e41347245b6f700f27f">MAX1704X</a>
 </li>
 <li>angleX_deg()
 : <a class="el" href="class_mpu6050.html#a40d6325833ca49b3e60369e1b660e21a">Mpu6050</a>
@@ -168,9 +167,6 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>angleZ_deg()
 : <a class="el" href="class_mpu6050.html#a91f485fc0c88974d32e348de61a166d6">Mpu6050</a>
-</li>
-<li>awake()
-: <a class="el" href="class_m_a_x1704.html#a6f310862827e8ca9aef009fbd75937d0">MAX1704</a>
 </li>
 </ul>
 
@@ -189,11 +185,17 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>canRestart()
 : <a class="el" href="class_p_c_a9685.html#a08219d87033026511cf345d6f7805c8f">PCA9685</a>
 </li>
+<li>cellVoltage_V()
+: <a class="el" href="class_m_a_x1704_x.html#a66030663576d543e555f99a1d7eb8c32">MAX1704X</a>
+</li>
 <li>ChangeOnAcknowledge
 : <a class="el" href="class_p_c_a9685.html#aad08d930c320d4d7f64705f849bae3e7a58181090eca47bdd48ec6bdc169850c5">PCA9685</a>
 </li>
 <li>ChangeOnStop
 : <a class="el" href="class_p_c_a9685.html#aad08d930c320d4d7f64705f849bae3e7a95ec52ede499e0651ee14576fa46e264">PCA9685</a>
+</li>
+<li>clearAlert()
+: <a class="el" href="class_m_a_x1704_x.html#acc4b1b39be9fc57584e2b91ddfe93353">MAX1704X</a>
 </li>
 <li>clearData()
 : <a class="el" href="class_mpu6050.html#a5bb486cb35b2279eb8cf1e5e8c89111c">Mpu6050</a>
@@ -210,6 +212,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>DEFAULT_CLOCKFREQUENCY_HZ
 : <a class="el" href="class_p_c_a9685.html#a48a8cc954f8123e3dcc4348fea089237">PCA9685</a>
+</li>
+<li>DEFAULT_I2C_ADDRESS
+: <a class="el" href="class_m_a_x1704_x.html#a846a22e302e26d2a3996866550082b7d">MAX1704X</a>
 </li>
 <li>DFRobotPowerShield()
 : <a class="el" href="class_d_f_robot_power_shield.html#ab1b0b9441c24bdac1bd241322bb7d070">DFRobotPowerShield</a>
@@ -262,13 +267,13 @@ $(document).ready(function(){initNavTree('functions.html','');});
 , <a class="el" href="class_p_c_a9685.html#a4dcd074cd987e3c6963d28f05cb7cd89">PCA9685</a>
 </li>
 <li>isAlerting()
-: <a class="el" href="class_m_a_x1704.html#ace27a404b82204a586c39dea66eab04f">MAX1704</a>
+: <a class="el" href="class_m_a_x1704_x.html#a48676be4b2370d9d925af02c0613d013">MAX1704X</a>
 </li>
 <li>isAutoIncrementingRegister()
 : <a class="el" href="class_p_c_a9685.html#a1487b88a100e692528b4d3439c5dcaac">PCA9685</a>
 </li>
 <li>isSleeping()
-: <a class="el" href="class_m_a_x1704.html#ab473db0745c1dbf3ef733f5dbc2a91bf">MAX1704</a>
+: <a class="el" href="class_m_a_x1704_x.html#a022a1499de6bb56d227b5e0b8da9d8c6">MAX1704X</a>
 , <a class="el" href="class_p_c_a9685.html#a774a99813a19b1ae34dbca36fed649ce">PCA9685</a>
 </li>
 <li>isUsingExternalClock()
@@ -290,6 +295,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>m_clockFrequency
 : <a class="el" href="class_p_c_a9685.html#ae275f4ab06d865db90fb9d982ce9552a">PCA9685</a>
+</li>
+<li>MAX1704X()
+: <a class="el" href="class_m_a_x1704_x.html#ac2b2f1552bd264fb41d8dc283d91dad8">MAX1704X</a>
 </li>
 <li>ModeHighResolution
 : <a class="el" href="class_adafruit___b_m_p180.html#acecf527c946ad4dc0b8753baa4087c2aac68d0cdd8279e975e58faa4ac387ecbf">Adafruit_BMP180</a>
@@ -320,11 +328,11 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>OUTPUT_COUNT
 : <a class="el" href="class_p_c_a9685.html#ab4ad6fea80e8ab389ec35c4c2a3717eb">PCA9685</a>
 </li>
-<li>OutputChangeEvent
-: <a class="el" href="class_p_c_a9685.html#aad08d930c320d4d7f64705f849bae3e7">PCA9685</a>
-</li>
 <li>outputChangeEvent()
 : <a class="el" href="class_p_c_a9685.html#a38d3b79f31580a2f21728d7cfd9ec8cb">PCA9685</a>
+</li>
+<li>OutputChangeEvent
+: <a class="el" href="class_p_c_a9685.html#aad08d930c320d4d7f64705f849bae3e7">PCA9685</a>
 </li>
 <li>outputEnabled()
 : <a class="el" href="class_d_f_robot_power_shield.html#aa1c9b5a444e44c709b7c473ca156378c">DFRobotPowerShield</a>
@@ -353,11 +361,11 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>outputStateInverted()
 : <a class="el" href="class_p_c_a9685.html#a1f12284c299c084c5648634f90c97d51">PCA9685</a>
 </li>
-<li>OutputStructure
-: <a class="el" href="class_p_c_a9685.html#a29e7a25f70a634495df5d7a8494611f5">PCA9685</a>
-</li>
 <li>outputStructure()
 : <a class="el" href="class_p_c_a9685.html#a3945fc89891a9cb342edc4835df30282">PCA9685</a>
+</li>
+<li>OutputStructure
+: <a class="el" href="class_p_c_a9685.html#a29e7a25f70a634495df5d7a8494611f5">PCA9685</a>
 </li>
 <li>OutputStructureOpenDrain
 : <a class="el" href="class_p_c_a9685.html#a29e7a25f70a634495df5d7a8494611f5ad190e799ffa2567c77d0d07322913aa8">PCA9685</a>
@@ -372,15 +380,17 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>PartMAX17043
+: <a class="el" href="class_m_a_x1704_x.html#a5cd187cc3bfab23178b35c7a06208c9faf6f8ffcb598213d0420fdbcfbe8abf71">MAX1704X</a>
+</li>
+<li>PartMAX17044
+: <a class="el" href="class_m_a_x1704_x.html#a5cd187cc3bfab23178b35c7a06208c9faf6ec102179ae697c363fb700d823f44a">MAX1704X</a>
+</li>
+<li>PartType
+: <a class="el" href="class_m_a_x1704_x.html#a5cd187cc3bfab23178b35c7a06208c9f">MAX1704X</a>
+</li>
 <li>PCA9685()
 : <a class="el" href="class_p_c_a9685.html#ad93a532940cf018ad8f967a25d42f92a">PCA9685</a>
-</li>
-</ul>
-
-
-<h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
-<li>quickStart()
-: <a class="el" href="class_m_a_x1704.html#a0b4bfeb85fc0b7f7e24d888d85baa85b">MAX1704</a>
 </li>
 </ul>
 
@@ -419,7 +429,6 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>reset()
 : <a class="el" href="class_adafruit___p_w_m_servo_driver.html#ac976f52233a75a4bd0eb6f2ce9b82b7f">Adafruit_PWMServoDriver</a>
 , <a class="el" href="class_p_c_a9685.html#a574bb3b9bcebc7a2fe803efd3ac99121">PCA9685</a>
-, <a class="el" href="class_m_a_x1704.html#a008255a30936aba7c642ad746ac2c2ac">MAX1704</a>
 </li>
 <li>restart()
 : <a class="el" href="class_p_c_a9685.html#aa47a35bb8e120accf4157bd869be0c18">PCA9685</a>
@@ -428,8 +437,8 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
-<li>setAlertThreshold()
-: <a class="el" href="class_m_a_x1704.html#aad7304d9ea7b332cc71fde3bedf6ebe4">MAX1704</a>
+<li>setAlertThreshold_pc()
+: <a class="el" href="class_m_a_x1704_x.html#a9255fd901cc5ff2a8aa808b887da6af9">MAX1704X</a>
 </li>
 <li>setAutoIncrementRegister()
 : <a class="el" href="class_p_c_a9685.html#a59af34f2cf8182c6022be2ace5f957d1">PCA9685</a>
@@ -477,7 +486,8 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="class_adafruit___p_w_m_servo_driver.html#a0ef6f1e3c81aebbd1d1da1bb12f3ed5c">Adafruit_PWMServoDriver</a>
 </li>
 <li>setSleeping()
-: <a class="el" href="class_p_c_a9685.html#a85cbeb29ea72985bfc398bd38491704c">PCA9685</a>
+: <a class="el" href="class_m_a_x1704_x.html#a61f6491fd67a3fc5db4561b1b448026c">MAX1704X</a>
+, <a class="el" href="class_p_c_a9685.html#a85cbeb29ea72985bfc398bd38491704c">PCA9685</a>
 </li>
 <li>setSubAddress1Enabled()
 : <a class="el" href="class_p_c_a9685.html#a583e71b0b70a59ce35cac77a11643f8b">PCA9685</a>
@@ -494,14 +504,8 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>setVoltageRange()
 : <a class="el" href="class_d_f_robot_power_shield.html#a05f26361517c0e5a0330c3a8e9df2fe3">DFRobotPowerShield</a>
 </li>
-<li>showConfig()
-: <a class="el" href="class_m_a_x1704.html#a87b78d5dd68c70e4f50152054cc11aab">MAX1704</a>
-</li>
-<li>sleep()
-: <a class="el" href="class_m_a_x1704.html#a16b66420d980d700a2854bd372aab97d">MAX1704</a>
-</li>
-<li>stateOfCharge()
-: <a class="el" href="class_m_a_x1704.html#a1e9e34028f6bf57dac389a465e3f3e3f">MAX1704</a>
+<li>stateOfCharge_pc()
+: <a class="el" href="class_m_a_x1704_x.html#ab4dd38a6b0c9c220c068c115d4d85487">MAX1704X</a>
 </li>
 <li>subAddress1Enabled()
 : <a class="el" href="class_p_c_a9685.html#ae450cd77d36495322c7a566b64a61380">PCA9685</a>
@@ -519,6 +523,12 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>temperature_celsius()
 : <a class="el" href="class_mpu6050.html#a23946e313e81cc7e6d9123a1f0258434">Mpu6050</a>
 </li>
+<li>triggerQuickStart()
+: <a class="el" href="class_m_a_x1704_x.html#a44209dffa34b2d73e93b1e2cff016c01">MAX1704X</a>
+</li>
+<li>triggerReset()
+: <a class="el" href="class_m_a_x1704_x.html#a6cc3b09e3857a2b2436213b529d4b781">MAX1704X</a>
+</li>
 </ul>
 
 
@@ -531,7 +541,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 <h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
 <li>version()
-: <a class="el" href="class_m_a_x1704.html#ae0334ad56c38a4661fa394dd1b32ea12">MAX1704</a>
+: <a class="el" href="class_m_a_x1704_x.html#a6870165050332a17e740b662cb1f467d">MAX1704X</a>
 </li>
 <li>voltage()
 : <a class="el" href="class_d_f_robot_power_shield.html#a8bfd9c7a02595ec44a254f920d703b29">DFRobotPowerShield</a>
@@ -573,7 +583,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 5 2014 15:57:15 for ArduParts by
+    <li class="footer">Generated on Fri Mar 7 2014 10:48:49 for ArduParts by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
   </ul>

@@ -10,6 +10,6 @@ var searchData=
   ['read_5f8u',['read_8u',['../class_p_c_a9685.html#ab0dffd7507a8acce84eaf4b740c46efd',1,'PCA9685']]],
   ['readrawpressure',['readRawPressure',['../class_adafruit___b_m_p180.html#afe4265f80946304c32a23629c117fa6a',1,'Adafruit_BMP180']]],
   ['readrawtemperature',['readRawTemperature',['../class_adafruit___b_m_p180.html#ad6be3dc1c8f3516d07fae143283497c3',1,'Adafruit_BMP180']]],
-  ['reset',['reset',['../class_m_a_x1704.html#a008255a30936aba7c642ad746ac2c2ac',1,'MAX1704::reset()'],['../class_adafruit___p_w_m_servo_driver.html#ac976f52233a75a4bd0eb6f2ce9b82b7f',1,'Adafruit_PWMServoDriver::reset()'],['../class_p_c_a9685.html#a574bb3b9bcebc7a2fe803efd3ac99121',1,'PCA9685::reset()']]],
+  ['reset',['reset',['../class_adafruit___p_w_m_servo_driver.html#ac976f52233a75a4bd0eb6f2ce9b82b7f',1,'Adafruit_PWMServoDriver::reset()'],['../class_p_c_a9685.html#a574bb3b9bcebc7a2fe803efd3ac99121',1,'PCA9685::reset()']]],
   ['restart',['restart',['../class_p_c_a9685.html#aa47a35bb8e120accf4157bd869be0c18',1,'PCA9685']]]
 ];

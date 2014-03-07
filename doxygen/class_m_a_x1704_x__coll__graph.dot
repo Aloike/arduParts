@@ -1,0 +1,7 @@
+digraph "MAX1704X"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MAX1704X\n|+ DEFAULT_I2C_ADDRESS\l|+ MAX1704X()\l+ cellVoltage_V()\l+ stateOfCharge_pc()\l+ triggerQuickStart()\l+ triggerReset()\l+ alertThreshold_pc()\l+ setAlertThreshold_pc()\l+ isAlerting()\l+ clearAlert()\l+ isSleeping()\l+ setSleeping()\l+ version()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}

@@ -30,9 +30,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_adafruit___b_m_p180_8cpp.html",
-"_mpu6050_8cpp.html#a7ffdb4fdeb16017fb66b041b5f45d83d",
-"_p_c_a9685_8cpp.html#a4ad58adf84157aebea2a98cc9402212a",
-"test___adafruit___b_m_p180_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d"
+"_mpu6050_8cpp.html#a6abd364cd187786b321cf07318e32165",
+"_p_c_a9685_8cpp.html#a1288d56108a5c2d89345973246d55248",
+"globals_0x67.html"
 ];
 
 var navTreeSubIndices = new Array();

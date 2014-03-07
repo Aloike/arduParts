@@ -88,6 +88,6 @@ var searchData=
   ['reg_5fsubadr2',['REG_SUBADR2',['../_p_c_a9685_8cpp.html#ab77f4f178026b0e0280871f7d4d55ca5',1,'PCA9685.cpp']]],
   ['reg_5fsubadr3',['REG_SUBADR3',['../_p_c_a9685_8cpp.html#a72d6411bc239f9395ffc28701cf21852',1,'PCA9685.cpp']]],
   ['reg_5ftestmode',['REG_TESTMODE',['../_p_c_a9685_8cpp.html#a10d56381d131d39e612c340683f45def',1,'PCA9685.cpp']]],
-  ['reset',['reset',['../class_m_a_x1704.html#a008255a30936aba7c642ad746ac2c2ac',1,'MAX1704::reset()'],['../class_adafruit___p_w_m_servo_driver.html#ac976f52233a75a4bd0eb6f2ce9b82b7f',1,'Adafruit_PWMServoDriver::reset()'],['../class_p_c_a9685.html#a574bb3b9bcebc7a2fe803efd3ac99121',1,'PCA9685::reset()']]],
+  ['reset',['reset',['../class_adafruit___p_w_m_servo_driver.html#ac976f52233a75a4bd0eb6f2ce9b82b7f',1,'Adafruit_PWMServoDriver::reset()'],['../class_p_c_a9685.html#a574bb3b9bcebc7a2fe803efd3ac99121',1,'PCA9685::reset()']]],
   ['restart',['restart',['../class_p_c_a9685.html#aa47a35bb8e120accf4157bd869be0c18',1,'PCA9685']]]
 ];

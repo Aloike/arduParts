@@ -1,11 +1,19 @@
 var searchData=
 [
-  ['bit_5f0',['BIT_0',['../_p_c_a9685_8cpp.html#add6d2693f5d356b091088437148f939b',1,'PCA9685.cpp']]],
-  ['bit_5f1',['BIT_1',['../_p_c_a9685_8cpp.html#aec9fa7211b7c9a686f2cd522cad7989d',1,'PCA9685.cpp']]],
-  ['bit_5f2',['BIT_2',['../_p_c_a9685_8cpp.html#ab94e068b5073d729aad6b2aeb613916c',1,'PCA9685.cpp']]],
-  ['bit_5f3',['BIT_3',['../_p_c_a9685_8cpp.html#a2cad0186598ab53983a3bca9b09b0a51',1,'PCA9685.cpp']]],
-  ['bit_5f4',['BIT_4',['../_p_c_a9685_8cpp.html#a3506434dff748a6be0d75a338a95e673',1,'PCA9685.cpp']]],
-  ['bit_5f5',['BIT_5',['../_p_c_a9685_8cpp.html#aae7fda97814f05bfe68c0f6bb2ef9f11',1,'PCA9685.cpp']]],
-  ['bit_5f6',['BIT_6',['../_p_c_a9685_8cpp.html#a7ecb78fe8c01d9722a06f10691495309',1,'PCA9685.cpp']]],
-  ['bit_5f7',['BIT_7',['../_p_c_a9685_8cpp.html#a4ad58adf84157aebea2a98cc9402212a',1,'PCA9685.cpp']]]
+  ['bit_5f0',['BIT_0',['../_m_a_x1704_x_8cpp.html#add6d2693f5d356b091088437148f939b',1,'BIT_0():&#160;MAX1704X.cpp'],['../_p_c_a9685_8cpp.html#add6d2693f5d356b091088437148f939b',1,'BIT_0():&#160;PCA9685.cpp']]],
+  ['bit_5f1',['BIT_1',['../_m_a_x1704_x_8cpp.html#aec9fa7211b7c9a686f2cd522cad7989d',1,'BIT_1():&#160;MAX1704X.cpp'],['../_p_c_a9685_8cpp.html#aec9fa7211b7c9a686f2cd522cad7989d',1,'BIT_1():&#160;PCA9685.cpp']]],
+  ['bit_5f10',['BIT_10',['../_m_a_x1704_x_8cpp.html#a68c53eefb39121d3abb4967a2ac5c683',1,'MAX1704X.cpp']]],
+  ['bit_5f11',['BIT_11',['../_m_a_x1704_x_8cpp.html#a635fff3e12ecbdf623544d1732415ffb',1,'MAX1704X.cpp']]],
+  ['bit_5f12',['BIT_12',['../_m_a_x1704_x_8cpp.html#a0ba5b67de2f048ed69dd42be5cf509d4',1,'MAX1704X.cpp']]],
+  ['bit_5f13',['BIT_13',['../_m_a_x1704_x_8cpp.html#ada1400714b9061183d116797f8775dce',1,'MAX1704X.cpp']]],
+  ['bit_5f14',['BIT_14',['../_m_a_x1704_x_8cpp.html#af50496d04a614ddef31ba9b1a8a92242',1,'MAX1704X.cpp']]],
+  ['bit_5f15',['BIT_15',['../_m_a_x1704_x_8cpp.html#a7611ad2315432d0865055d2ff3066968',1,'MAX1704X.cpp']]],
+  ['bit_5f2',['BIT_2',['../_m_a_x1704_x_8cpp.html#ab94e068b5073d729aad6b2aeb613916c',1,'BIT_2():&#160;MAX1704X.cpp'],['../_p_c_a9685_8cpp.html#ab94e068b5073d729aad6b2aeb613916c',1,'BIT_2():&#160;PCA9685.cpp']]],
+  ['bit_5f3',['BIT_3',['../_m_a_x1704_x_8cpp.html#a2cad0186598ab53983a3bca9b09b0a51',1,'BIT_3():&#160;MAX1704X.cpp'],['../_p_c_a9685_8cpp.html#a2cad0186598ab53983a3bca9b09b0a51',1,'BIT_3():&#160;PCA9685.cpp']]],
+  ['bit_5f4',['BIT_4',['../_m_a_x1704_x_8cpp.html#a3506434dff748a6be0d75a338a95e673',1,'BIT_4():&#160;MAX1704X.cpp'],['../_p_c_a9685_8cpp.html#a3506434dff748a6be0d75a338a95e673',1,'BIT_4():&#160;PCA9685.cpp']]],
+  ['bit_5f5',['BIT_5',['../_m_a_x1704_x_8cpp.html#aae7fda97814f05bfe68c0f6bb2ef9f11',1,'BIT_5():&#160;MAX1704X.cpp'],['../_p_c_a9685_8cpp.html#aae7fda97814f05bfe68c0f6bb2ef9f11',1,'BIT_5():&#160;PCA9685.cpp']]],
+  ['bit_5f6',['BIT_6',['../_m_a_x1704_x_8cpp.html#a7ecb78fe8c01d9722a06f10691495309',1,'BIT_6():&#160;MAX1704X.cpp'],['../_p_c_a9685_8cpp.html#a7ecb78fe8c01d9722a06f10691495309',1,'BIT_6():&#160;PCA9685.cpp']]],
+  ['bit_5f7',['BIT_7',['../_m_a_x1704_x_8cpp.html#a4ad58adf84157aebea2a98cc9402212a',1,'BIT_7():&#160;MAX1704X.cpp'],['../_p_c_a9685_8cpp.html#a4ad58adf84157aebea2a98cc9402212a',1,'BIT_7():&#160;PCA9685.cpp']]],
+  ['bit_5f8',['BIT_8',['../_m_a_x1704_x_8cpp.html#ad368b88fcb5547c245121a4533e9f858',1,'MAX1704X.cpp']]],
+  ['bit_5f9',['BIT_9',['../_m_a_x1704_x_8cpp.html#a3b5258d1a8c72195f5d01bf7f0455f11',1,'MAX1704X.cpp']]]
 ];

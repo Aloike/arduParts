@@ -17,5 +17,7 @@ var searchData=
   ['test_5fpca9685_2eh',['test_PCA9685.h',['../test___p_c_a9685_8h.html',1,'']]],
   ['test_5fsparkfun_5ffuelgauge_2ecpp',['test_Sparkfun_fuelGauge.cpp',['../test___sparkfun__fuel_gauge_8cpp.html',1,'']]],
   ['test_5fsparkfun_5ffuelgauge_2eh',['test_Sparkfun_fuelGauge.h',['../test___sparkfun__fuel_gauge_8h.html',1,'']]],
-  ['todo_20list',['Todo List',['../todo.html',1,'']]]
+  ['todo_20list',['Todo List',['../todo.html',1,'']]],
+  ['triggerquickstart',['triggerQuickStart',['../class_m_a_x1704_x.html#a44209dffa34b2d73e93b1e2cff016c01',1,'MAX1704X']]],
+  ['triggerreset',['triggerReset',['../class_m_a_x1704_x.html#a6cc3b09e3857a2b2436213b529d4b781',1,'MAX1704X']]]
 ];

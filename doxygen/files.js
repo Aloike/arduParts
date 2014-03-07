@@ -10,8 +10,10 @@ var files =
     [ "DFRobotPowerShield.h", "_d_f_robot_power_shield_8h.html", [
       [ "DFRobotPowerShield", "class_d_f_robot_power_shield.html", "class_d_f_robot_power_shield" ]
     ] ],
-    [ "MAX1704.cpp", "_m_a_x1704_8cpp.html", null ],
-    [ "MAX1704.h", "_m_a_x1704_8h.html", "_m_a_x1704_8h" ],
+    [ "MAX1704X.cpp", "_m_a_x1704_x_8cpp.html", "_m_a_x1704_x_8cpp" ],
+    [ "MAX1704X.h", "_m_a_x1704_x_8h.html", [
+      [ "MAX1704X", "class_m_a_x1704_x.html", "class_m_a_x1704_x" ]
+    ] ],
     [ "Mpu6050.cpp", "_mpu6050_8cpp.html", "_mpu6050_8cpp" ],
     [ "Mpu6050.h", "_mpu6050_8h.html", [
       [ "Mpu6050", "class_mpu6050.html", "class_mpu6050" ]
